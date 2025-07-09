@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 8px;
+  background-color: #202020
+}
+
+.selectTitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.selectWrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #202020;
+  border: 1px solid #D9A528;
+  width: 140px;
+}
+
+.arrow svg {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #202020;
+  width: 80%;
+  border-radius: 2px;
+}
+
+.placeholder[data-status="invalid"] {
+  border: 1px solid rgba(255, 0, 0, 1);
+}
+
+.selectWrapper[data-is-active="true"] .arrow {
+  transform: rotate(180deg);
+  margin-top: -6px;
+}
+
+.selectWrapper .option {
+  justify-content: center;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+  border: 1px;
+  cursor: pointer;
+  font-family: "SF Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+}
+
+.option[aria-selected="true"] {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+

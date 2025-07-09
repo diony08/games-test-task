@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardImg {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0 5px;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardName {
+  width: 200px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  text-align: start;
+  word-wrap: break-word;
+}
